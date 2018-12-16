@@ -60,6 +60,25 @@ a {
 /* .box {
   background-color: #2699FB;
 } */
+@media screen and (min-width: 961px) {
+  .background-video {
+    width: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: -100;
+  }
+}
+@media screen and (min-width: 361px) and (max-width: 960px) {
+  .background-video {
+    display: none;
+  }
+}
+@media screen and (max-width: 360px) {
+  .background-video {
+    display: none;
+  }
+}
 
 /* @media screen and (min-width: 961px) {
   #background-video {
