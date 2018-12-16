@@ -1,70 +1,68 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url('https://fonts.googleapis.com/css?family=Monoton');
-/* GRID ONLY FOR CONTENT */############################################################
-/* temporarely remove the "content" of all pages */
+@import url('https://fonts.googleapis.com/css?family=Bungee');
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-*:before, *:after {
-  box-sizing: inherit;
 }
  body {
-  /* font-family: 'Roboto', Times, sans-serif; */
+  font-family: 'Roboto', Times, sans-serif;
   text-align: center;
-  /* color: #FFFFFF */
-  width: 100%;
-  height: 100%;
-  font-size: 100%;
-  overflow-x: hidden;
-  line-height: 2;
-}
-.container-index {
-  /* 960px on web */
-  width: 100%;
   margin: 0 auto;
+  color: #FFFFFF;
+  /* change in media queries */
+  width: 960px;
+  line-height: 1.5;
 }
-header, footer {
-  width: 100%;
-  background-color: coral;
+.menu {
+  overflow: hidden;
 }
-footer {
-  align-self: flex-end;
-}
-img {
-  width: 100%;
-}
-
-/* header {
-  font-family: 'Monoton', cursive, Times, sans-serif;
+header {
+  background-color: #000000;
+  font-family: 'Bungee', cursive, Times, sans-serif;
   background: url('../img/resized/companylogoBG.png') center #FFFFFF no-repeat;
   background-size: cover;
+  /* change in media queries */
+  font-size: 40px;
+  padding: 10px 0;
+}
+.menu {
+  list-style:none;
+  text-align:center;
+}
+.menu a {
+  display: inline-block;
+  /* change in media queries */
+  padding: 10px 5px;
+}
+.menu li {
+  display: inline;
 }
 nav {
   background-color: #707070;
 }
 footer {
   background-color: #000000;
+  align-self: flex-end;
+  /* change in media queries */
+  padding: 10px 0 10px 0;
 }
 nav, footer {
   border-style: solid;
   border-color: #FFFFFF;
 }
-.box {
-  background-color: #2699FB;
-}
 h1, h2, h3 {
   font-weight: normal;
 }
 a {
-  color: #FFFFFF;
   text-decoration: none;
+  color: #FFFFFF;
+}
+/* .box {
+  background-color: #2699FB;
 } */
-/* flex */
 
-@media screen and (min-width: 961px) {
-  /* #background-video {
+/* @media screen and (min-width: 961px) {
+  #background-video {
     width: 100%;
     position: fixed;
     right: 0;
@@ -81,21 +79,21 @@ a {
   }
   header, .box {
     padding: 50px 0 50px 0;
-  } */
+  }
 }
 @media screen and (min-width: 361px) and (max-width: 960px) {
-  /* header, nav, footer, img, .box {
+  header, nav, footer, img, .box {
     width: 100%;
   }
   header, .box {
     padding: 5% 0 5% 0;
-  } */
+  }
 }
 @media screen and (max-width: 360px) {
-  /* header, nav, footer, img, .box {
+  header, nav, footer, img, .box {
     width: 100%;
   }
   header, .box {
     padding: 5% 0 5% 0;
-  } */
-}
+  }
+} */
