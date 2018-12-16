@@ -1,4 +1,101 @@
-header
-nav
-content
-footer
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+/* GRID ONLY FOR CONTENT */############################################################
+/* temporarely remove the "content" of all pages */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:before, *:after {
+  box-sizing: inherit;
+}
+ body {
+  /* font-family: 'Roboto', Times, sans-serif; */
+  text-align: center;
+  /* color: #FFFFFF */
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  overflow-x: hidden;
+  line-height: 2;
+}
+.container-index {
+  /* 960px on web */
+  width: 100%;
+  margin: 0 auto;
+}
+header, footer {
+  width: 100%;
+  background-color: coral;
+}
+footer {
+  align-self: flex-end;
+}
+img {
+  width: 100%;
+}
+
+/* header {
+  font-family: 'Monoton', cursive, Times, sans-serif;
+  background: url('../img/resized/companylogoBG.png') center #FFFFFF no-repeat;
+  background-size: cover;
+}
+nav {
+  background-color: #707070;
+}
+footer {
+  background-color: #000000;
+}
+nav, footer {
+  border-style: solid;
+  border-color: #FFFFFF;
+}
+.box {
+  background-color: #2699FB;
+}
+h1, h2, h3 {
+  font-weight: normal;
+}
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+} */
+/* flex */
+
+@media screen and (min-width: 961px) {
+  /* #background-video {
+    width: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: -100;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header, nav, footer, img, .box {
+    width: 960px;
+  }
+  header, .box {
+    padding: 50px 0 50px 0;
+  } */
+}
+@media screen and (min-width: 361px) and (max-width: 960px) {
+  /* header, nav, footer, img, .box {
+    width: 100%;
+  }
+  header, .box {
+    padding: 5% 0 5% 0;
+  } */
+}
+@media screen and (max-width: 360px) {
+  /* header, nav, footer, img, .box {
+    width: 100%;
+  }
+  header, .box {
+    padding: 5% 0 5% 0;
+  } */
+}
