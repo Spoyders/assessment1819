@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Bungee');
+/* TODO:
+logo contrast SHADOW
+logo clickable
+mobile navigation image
+menu clickable
+*/
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +17,7 @@
   line-height: 1.5;
 }
 header {
+  /* OUTLINE / SHADOW */
   background-color: #000000;
   font-family: 'Bungee', cursive, Times, sans-serif;
   background: url('../img/resized/companylogoBG.png') center #FFFFFF no-repeat;
@@ -85,9 +92,7 @@ img {
     line-height: normal;
   }
   img {
-    /* might obstruct images from being next to eachother */
     display: block;
-    object-fit: cover;
     width: 960px;
     height: 400px;
   }
@@ -113,6 +118,29 @@ img {
   .menu a {
     padding: 1vw 1vw;
   }
+  .box {
+    font-size: calc(1em + 4vw);;
+    padding: 1vw 0;
+    line-height: normal;
+  }
+  img {
+    display: block;
+    width: 100%;
+    height: 40vw;
+  }
+  #product3 {
+    float: left;
+  }
+  #product8 {
+    float: right;
+  }
+  #product3, #product8 {
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-width: 4px;
+    margin: -4px;
+    width: 50%;
+  }
   .container-index > #mobile-games, .container-index > #board-games, .container-index > #product6 {
     display: none;
   }
@@ -137,6 +165,23 @@ img {
   }
   .menu a {
     padding: 1vw 1vw;
+  }
+  .box {
+    font-size: 8vw;
+    padding: 1vw 0;
+    line-height: normal;
+  }
+  img {
+    display: block;
+    width: 100%;
+    height: 40vw;
+  }
+  .container-index > img {
+    border-color: #FFFFFF;
+    border-style: solid;
+    border-width: 3px;
+    margin: -3px;
+    width: 100%;
   }
   .container-index > #mobile-games, .container-index > #board-games, .container-index > #console-games {
     display: none;
