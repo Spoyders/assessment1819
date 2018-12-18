@@ -17,7 +17,27 @@
         <li><a href="contact.html">CONTACT</a></li>
       </ul>
     </nav>
-    <article class="container-index">
+    <article class="container-contact">
+      <form action="nowhere.php" method="post">
+      	<fieldset>
+      		<label >Select topic</label>
+      		<select>
+      			<option value="general">General inquiries</option>
+      			<option value="press">Press relations</option>
+      			<option value="recruitement">Recruitement</option>
+      		</select>
+      	</fieldset>
+      	<fieldset class="contactFormFieldset">
+      		<input type="text" name="contactFormName" placeholder="Your name.."/>
+      	</fieldset>
+      	<fieldset class="contactFormFieldset">
+      		<input type="email" name="email" placeholder="Your email.."/>
+      	</fieldset>
+      	<fieldset>
+      		<textarea rows="7" cols="40" name="message" placeholder="Write something.."></textarea>
+      	</fieldset>
+      	<input type="submit" value="Submit"/>
+      </form>
     </article>
     <footer>
       <p>&copy;2018 - Koen Olij - Inholland</p>
