@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Bungee');
 /* TODO:
-logo contrast SHADOW
 logo clickable
-mobile navigation image
-menu clickable
 combine tags
 */
 * {
@@ -19,7 +16,6 @@ combine tags
   line-height: 1.5;
 }
 header {
-  /* OUTLINE / SHADOW */
   background-color: #000000;
   font-family: 'Bungee', cursive, Times, sans-serif;
   background: url('../img/resized/companylogoBG.png') center #FFFFFF no-repeat;
@@ -37,9 +33,6 @@ nav, footer {
   border-color: #FFFFFF;
 }
 .menu {
-  overflow: hidden;
-}
-.menu {
   list-style:none;
   text-align:center;
 }
@@ -55,6 +48,9 @@ h1, h2, h3 {
 a {
   text-decoration: none;
   color: #FFFFFF;
+}
+a:hover {
+  color: #2699FB;
 }
 img {
   display: block;
@@ -138,7 +134,7 @@ textarea, input, #form {
     border-color: #FFFFFF;
     border-width: 7px;
   }
-  #products {
+  #products, .nav-icon, .dropdown {
     display: none;
   }
   .container-contact, textarea, input {
@@ -214,7 +210,7 @@ textarea, input, #form {
     border-color: #FFFFFF;
     border-width: 5px;
   }
-  .container-index > #mobile-games, .container-index > #board-games, .container-index > #product6, #products, #product-cat, #information {
+  .container-index > #mobile-games, .container-index > #board-games, .container-index > #product6, #products, #product-cat, #information, .nav-icon, .dropdown {
     display: none;
   }
   .container-contact, textarea, input {
@@ -282,7 +278,7 @@ textarea, input, #form {
     border-color: #FFFFFF;
     border-width: 4px;
   }
-  .container-index > #mobile-games, .container-index > #board-games, .container-index > #console-games, #product-cat, #information {
+  .container-index > #mobile-games, .container-index > #board-games, .container-index > #console-games, #product-cat, #information, .items {
     display: none;
   }
   .container-contact, textarea, input {
@@ -306,5 +302,28 @@ textarea, input, #form {
   }
   select {
     width: 90%;
+  }
+  .menu {
+    height: 30px;
+  }
+  .nav-icon {
+    float: left;
+    height: 20px;
+    margin: 2px;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+  }
+  .dropdown-content a {
+    color: #000000;
+    display: block;
+  }
+  .dropdown-content a:hover {
+    background-color: #CCCCCC;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
   }
 }
