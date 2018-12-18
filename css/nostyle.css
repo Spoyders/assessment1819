@@ -63,6 +63,35 @@ img {
 .box {
   background-color: #2699FB;
 }
+.container-contact {
+  border-style: solid;
+  border-color: #AAAAAA;
+  background-color: #F5F5F5
+}
+#submit {
+  color: #FFFFFF;
+  background-color: #2699FB;
+}
+.container-contact, textarea, input, fieldset {
+  font-family: 'Roboto', Times, sans-serif;
+  color: #AAAAAA;
+  border: 0;
+}
+label {
+  float: left;
+}
+select {
+  border: 3px solid #AAAAAA;
+}
+textarea, input, #form {
+  resize: none;
+  border: 3px solid #AAAAAA;
+}
+#form {
+  margin: auto;
+  width: 80%;
+  background-color: #FFFFFF;
+}
 @media screen and (min-width: 961px) {
   .background-video {
     width: 100%;
@@ -111,6 +140,25 @@ img {
   }
   #products {
     display: none;
+  }
+  .container-contact, textarea, input {
+    font-size: 16px;
+  }
+  select {
+    padding: 4px 0;
+  }
+  textarea, input, #form {
+    width: 80%;
+    margin: 10px 0;
+    padding: 15px 0;
+  }
+  #form {
+    margin: auto;
+    height: 42px;
+    padding: 3px 0;
+  }
+  select {
+    width: 50%;
   }
 }
 @media screen and (min-width: 361px) and (max-width: 960px) {
@@ -166,8 +214,30 @@ img {
     border-color: #FFFFFF;
     border-width: 5px;
   }
-  .container-index > #mobile-games, .container-index > #board-games, .container-index > #product6, #products, #product-cat {
+  .container-index > #mobile-games, .container-index > #board-games, .container-index > #product6, #products, #product-cat, #information {
     display: none;
+  }
+  .container-contact, textarea, input {
+    font-size: 16px;
+  }
+  select {
+    padding: 4px 0;
+  }
+  textarea, input, #form {
+    width: 80%;
+    margin: 10px 0;
+    padding: 15px 0;
+  }
+  #form {
+    margin: auto;
+    height: 70px;
+    padding: 3px 0;
+  }
+  .container-contact {
+    padding: 30px 0 0 0;
+  }
+  select {
+    width: 90%;
   }
 }
 @media screen and (max-width: 360px) {
@@ -212,13 +282,29 @@ img {
     border-color: #FFFFFF;
     border-width: 4px;
   }
-  .container-index > #mobile-games, .container-index > #board-games, .container-index > #console-games, #product-cat {
+  .container-index > #mobile-games, .container-index > #board-games, .container-index > #console-games, #product-cat, #information {
     display: none;
   }
+  .container-contact, textarea, input {
+    font-size: 12px;
+  }
+  select {
+    padding: 4px 0;
+  }
+  textarea, input, #form {
+    width: 80%;
+    margin: 5px 0;
+    padding: 10px 0;
+  }
+  #form {
+    margin: auto;
+    height: 60px;
+    padding: 3px 0;
+  }
+  .container-contact {
+    padding: 15px 0 0 0;
+  }
+  select {
+    width: 90%;
+  }
 }
-/* .container-index{
-}
-.container-product{
-}
-.container-contact{
-} */
