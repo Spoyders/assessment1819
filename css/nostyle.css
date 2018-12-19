@@ -22,7 +22,7 @@ nav {
 }
 footer {
 	background-color: #000000;
-	align-self: flex-end;
+	/* align-self: flex-end; */
 }
 nav,
 footer {
@@ -53,6 +53,9 @@ a:hover {
 img {
 	display: block;
 	object-fit: cover;
+}
+.hidden {
+	display: none;
 }
 .box {
 	background-color: #2699FB;
